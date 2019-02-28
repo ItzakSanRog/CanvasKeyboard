@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dibujando con flechas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Dibuja presionando las flechas del teclado</h1>
+    <p>Ingresa la cantidad de pixeles que quieres que quieres moverte</p>
+    <input id="movimientoInput" type="text" placeholder="5" width="50">
+    <br>
+    <p>Selecciona un color</p>
+    <label for="color">
+        <input id="radioNegro" type="radio" name="color" checked> Negro
+    </label>
+    <label for="color">
+        <input id="radioNaranja" type="radio" name="color"> Naranja
+    </label>
+    <label for="color">
+        <input id="radioRosa" type="radio" name="color"> Rosa
+    </label>
+    <br> <br>
+    <canvas id="lienzo" width="600" height="300"></canvas>
+    <br>
+    <input id="limpiarLienzo" type="button" value="Limpiar lienzo">
+    <script src="comandoTeclas.js"></script>
+</body>
+</html>
